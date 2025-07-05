@@ -29,6 +29,7 @@ def main():
     prompt_tokens = response.usage_metadata.prompt_token_count
     response_tokens = response.usage_metadata.candidates_token_count
     
+    ## Print Responses
     print(response_text)
     if args.verbose:
         print(f"User prompt: {user_prompt}")
